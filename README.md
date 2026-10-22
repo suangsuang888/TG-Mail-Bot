@@ -32,3 +32,32 @@
 ### 3. 触发器设置
 - 在 Worker 的“触发器”选项卡中，添加一个 **自定义域** 用于访问 Web App 网页。
 - 在 Cloudflare 域名的“电子邮件路由”规则中，将“全收”操作指向此 Worker。
+
+- 
+  如下设置，可以接收不同邮箱到不通的机器人，多申请几个机器人
+- const ROUTING_TABLE = [
+  {
+    // 1. QQ 机器人
+    keywords: ["5766666@qq.com"],
+    token: "xxxxxxxxxxxxx",
+    chatId: "xxxxxxxxx"
+  },
+  {
+    // 2. 谷歌机器人
+    keywords: ["xxxxxxxxx@gmail.com"],
+    token: "sssssssssss",
+    chatId: "xxxxxxxxxx"
+  },
+  {
+    // 3. Outlook 机器人
+    keywords: ["werwrwerwer@outlook.com"],
+    token: "ffffffffffffffffffffffffff",
+    chatId: "xxxxxxxxxxxx"
+  },
+  {
+    // 4. Hotmail 机器人2
+    keywords: ["hhhhhhhhhhhhhhhh@outlook.com",],
+    token: "rrrrrrrrrrrrrrrrrrrr",
+    chatId: "5555555555555555"
+  }
+];
